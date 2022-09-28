@@ -20,7 +20,7 @@ remote_theme: "mmistakes/so-simple-theme@3.2.0"
 skin: "/assets/css/skins/default.css"
 locale: en-US
 title: "Jimin Page"
-description: "안녕하세요. 정지민입니다."
+description: "안녕하세요. 정지민입니다!"
 baseurl: 
 #"/docs/markup/markup-html-elements-and-formatting"
 # the subpath of your site, e.g. "/blog"
@@ -28,7 +28,8 @@ url: "https://jiminjung.github.io"
 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
-read_time: # reading time estimates, e.g. true
+read_time: true
+# reading time estimates, e.g. true
 words_per_minute: # 200
 mathjax:
   enable: # MathJax equations, e.g. true, false (default)
@@ -84,6 +85,11 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
@@ -94,12 +100,20 @@ defaults:
     values:
       layout: post
       share: true
-
+  # Recipe defaults
+  - scope:
+      path: "_recipes"
+      type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
+      
 # Site Author
 author:
-  name:
-  picture:
-  email:
+  name: Jimin Jung
+  picture: /images.bio-photo.jpg
+  email: jimin6060@naver.com
   twitter:
   links:
     - title:
