@@ -1,5 +1,5 @@
 ---
-title: "홀리 쉿더 북"
+title: "테스트 2빠"
 image: 
   path: /images/oatmeal-cookies-lg.jpg
   thumbnail: /images/oatmeal-cookies-400x200.jpg

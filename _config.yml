@@ -26,7 +26,8 @@ baseurl:
 # the subpath of your site, e.g. "/blog"
 url: "https://jiminjung.github.io" 
 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: # path of site logo, e.g. "/images/logo.png"
+logo: "/images/michael-rose-photo.jpg"
+# path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: true
 # reading time estimates, e.g. true
@@ -90,7 +91,9 @@ collections:
   recipes:
     output: true
     permalink: /:collection/:path/
-
+  tests:
+    output: true
+    permalink: /:collection/:path/
 # Front Matter Defaults
 defaults:
   # Posts defaults
@@ -104,6 +107,14 @@ defaults:
   - scope:
       path: "_recipes"
       type: recipes
+    values:
+      layout: post
+      comments: true
+      share: true
+  # test defaults
+  - scope:
+      path: "_tests"
+      type: tests
     values:
       layout: post
       comments: true

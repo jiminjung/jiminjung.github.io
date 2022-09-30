@@ -1,7 +1,7 @@
 ---
 title: Holly
 layout: collection
-permalink: /
+permalink: /recipes
 collection: recipes
 entries_layout: grid
 ---
